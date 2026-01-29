@@ -104,16 +104,16 @@
       <p id="text_2" class="font-bold w-full">Coming Soon...</p>
     </div>
     <footer class="mt-48 flex flex-col items-center">
-      <p class="text-sm">&copy; UrbanTech Ventures, <span id="currentYear"></span></p>
-      <p id="locationText" class="text-sm">Tokyo, Japan</p>
+      <p class="text-sm">&copy; UrbanTech Ventures <span id="currentYear"></span></p>
+      <p id="locationText" class="text-sm">Tokyo Japan</p>
     </footer>
     <script>
       document.getElementById("currentYear").textContent = new Date().getFullYear();
       
       function changeLanguage(lang) {
           const translations = {
-              en: { text_1: "Connecting capital, infrastructure and projects in Tokyo. A venture platform that co-creates smart city solutions by integrating digital and physical spaces to address Japan’s urban challenges at scale.", text_2: "Coming soon..", locationText: "Tokyo, Japan" },
-              ja: { text_1: "東京の資本、インフラ、プロジェクトを繋ぐ。デジタル空間とリアル空間を融合させ、スマートシティソリューションを共創することで、日本の都市課題に大規模に取り組むベンチャープラットフォーム。", text_2: "近日公開..", locationText: "東京、日本" },
+              en: { text_1: "Connecting capital, infrastructure and projects in Tokyo. A venture platform that co-creates smart city solutions by integrating digital and physical spaces to address Japan’s urban challenges at scale.", text_2: "Coming soon..", locationText: "Tokyo Japan" },
+              ja: { text_1: "東京の資本、インフラ、プロジェクトを繋ぐ。デジタル空間とリアル空間を融合させ、スマートシティソリューションを共創することで、日本の都市課題に大規模に取り組むベンチャープラットフォーム。", text_2: "近日公開..", locationText: "東京　日本" },
           };
       
           document.getElementById("text_1").textContent = translations[lang].text_1;
