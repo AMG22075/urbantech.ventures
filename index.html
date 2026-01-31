@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>UrbanTech Ventures</title>
     <meta id="meta-description" name="description" content="Connecting capital, infrastructure and projects."/>
@@ -47,77 +47,15 @@
       .roboto {
       font-family: 'Roboto Mono', sans-serif;  
       }      /* Flag Styling */
-      .flag-container {
-      position: relative;
-      display: inline-block;
-      margin-top: 10px;
-      margin-right: 5px;
-      }
-      .flag-icon {
-      width: 20px;
-      height: 15px;
-      display: inline-block;
-      background-size: cover;
-      cursor: pointer;
-      border-radius: 3px;
-      }
-      .tooltip {
-      position: absolute;
-      background-color: black;
-      color: white;
-      font-size: 12px;
-      font-family: '', serif; 
-      padding: 3px 6px;
-      border-radius: 4px;
-      white-space: nowrap;
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.1s ease-in-out;
-      top: -25px;
-      left: 50%;
-      transform: translateX(-50%);
-      }
-      .flag-container:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
-      }
-      @media (hover: hover) {
-      .flag-container:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
-      display: none;  
-      }
-      }
-      @media (max-width: 768px) {
-      .tooltip {
-      display: none;
-      }
-      }
-      /* Arrow Animation on Hover */
-      .button-text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s ease-in-out;
-      }
-      .button:hover .button-text svg {
-      transform: translateX(5px);
-      }
     </style>
   </head>
   <body class="items-center min-h-screen bg-[#F3F4F6] bg-opacity-1 text-black">
     
-    <header class="w-full flex justify-between mb-24 bg-black p-6">
+    <header class="w-full flex justify-between items-center  mb-24 bg-black p-6">
     <p class="text-xl font-bold text-teal-300 text-left roboto leading-none">URBANTECH<br>VENTURES</p>
-     <div class="flex flex-row gap-2">
-      <div class="flag-container">
-        <p class="flag-icon text-white text-sm hover:text-teal-300 transition duration-300 ease-in-out" data-lang="en" alt="English" >EN</p>
-        <span class="tooltip">English</span>
-      </div>
-      <div class="flag-container">
-        <p class="flag-icon text-white text-sm hover:text-teal-300 transition duration-300 ease-in-out " data-lang="ja" alt="日本語" >JA</p>
-        <span class="tooltip">日本語</span>
-      </div>
+     <div class="flex flex-row gap-4">
+        <p class="text-white text-sm hover:text-teal-300 transition duration-300 ease-in-out" data-lang="en" alt="English" >EN</p>
+        <p class="text-white text-sm hover:text-teal-300 transition duration-300 ease-in-out " data-lang="ja" alt="日本語" >JA</p>
      </div>
     </header>
     <div class="flex flex-col items-center text-xl text-center gap-12 mb-24 ">
