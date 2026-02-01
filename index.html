@@ -60,7 +60,6 @@
     </header>
     <div class="flex flex-col items-center text-xl text-center gap-12 mb-24 p-6 ">
       <p id="text_1" class="sm:w-1/2 w-full">Connecting capital, infrastructure and projects in Tokyo. A venture platform that co-creates smart city solutions by integrating digital and physical spaces to address Japan’s urban challenges at scale.<br><br></p>
-      <p id="text_2" class="font-bold w-full">Coming Soon...</p>
     </div>
     <footer class="mt-48 flex flex-col items-center">
       <p class="text-sm">&copy; UrbanTech Ventures <span id="currentYear"></span></p>
@@ -71,12 +70,11 @@
       
       function changeLanguage(lang) {
           const translations = {
-              en: { text_1: "Connecting capital, infrastructure and projects in Tokyo. A venture platform that co-creates smart city solutions by integrating digital and physical spaces to address Japan’s urban challenges at scale.", text_2: "Coming soon...", locationText: "Tokyo Japan" },
-              ja: { text_1: "東京の資本、インフラ、プロジェクトを繋ぐ。デジタル空間とリアル空間を融合させ、スマートシティソリューションを共創することで、日本の都市課題に大規模に取り組むベンチャープラットフォーム。", text_2: "近日公開。。。", locationText: "東京　日本" },
+              en: { text_1: "Connecting capital, infrastructure and projects in Tokyo. A venture platform that co-creates smart city solutions by integrating digital and physical spaces to address Japan’s urban challenges at scale.", locationText: "Tokyo Japan" },
+              ja: { text_1: "東京の資本、インフラ、プロジェクトを繋ぐ。デジタル空間とリアル空間を融合させ、スマートシティソリューションを共創することで、日本の都市課題に大規模に取り組むベンチャープラットフォーム。", locationText: "東京　日本" },
           };
       
           document.getElementById("text_1").textContent = translations[lang].text_1;
-          document.getElementById("text_2").textContent = translations[lang].text_2;
           document.getElementById("locationText").textContent = translations[lang].locationText;
           localStorage.setItem("selectedLang", lang);
       }
