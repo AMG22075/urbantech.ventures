@@ -52,9 +52,9 @@
   <body class="grid content-between items-center min-h-screen bg-stone-100 bg-opacity-1 text-black cursor-default">
     <header class="w-full flex justify-end items-center select-none px-12 py-8 mb-12">
       <p class="hidden select-none text-xl font-bold text-teal-300 text-left roboto leading-none">URBANTECH<br>VENTURES</p>
-      <div class="hidden flex flex-row gap-4 text-sm">
-        <p class="flag-icon cursor-pointer" data-lang="en" alt="English" >EN</p>
-        <p class="flag-icon cursor-pointer" data-lang="ja" alt="日本語" >JA</p>
+      <div class="flex flex-row gap-4 text-sm">
+        <p class="lang_icon cursor-pointer" data-lang="en" alt="English">EN</p>
+        <p class="lang_icon cursor-pointer" data-lang="ja" alt="日本語">JA</p>
       </div>
     </header>
     <div class="flex flex-col text-left place-self-center items-center text-xl text-left p-8 sm:w-[800px] w-full ">
@@ -82,7 +82,7 @@
           <li><span class="font-bold">Go-To-Market: </span></span><span id="text_4"></span></li>
           <li><span class="font-bold">Industry Access Labs: </span><span id="text_5"></span></li>
         </ul>
-        <p class="pt-8">Follow us on <a class="cursor-pointer underline decoration-dotted" href="https://www.linkedin.com/company/urban-tech-ventures/">LinkedIn</a> for updates.</p>
+        <p id="text_6" class="pt-8"></p>
         <div>
           <div class="hidden mt-6">Partners:<br>
             <a class="cursor-pointer underline decoration-dotted" href="https://www.linkedin.com/in/alberto-saruggia/">Alberto MG Saruggia</a>&nbsp;&nbsp;
@@ -100,35 +100,38 @@
       function changeLanguage(lang) {
           const translations = {
               en: { text_1: "UrbanTech Ventures is a venture commercialization platform focused on built environment technologies. We engage corporates, startups and institutions to integrate digital and physical solutions and address Japan’s urban challenges at scale.",
-                   text_2: "Our approach is bottom-up and purpose-built for smart cities, starting from real user needs. Projects are identified, validated, and deployed through direct collaborations with industry stakeholders. Commercial relationships are structured to distribute revenues based on measurable outcomes.",
+                   text_2: "Our approach is bottom-up and purpose-built for smart cities, starting from real user needs. Projects are identified, validated, and deployed through direct collaborations with industry stakeholders, while commercial relationships are structured to distribute revenues based on measurable outcomes.",
                    text_3: "Corporate procurement and pilot validation of startup solutions.",
                    text_4: "Advisory services enabling startup commercialization and adoption. Currently working on AI-powered construction safety and 5G telecom infrastructure.",
-                   text_5: "Curated workshops and seminars with institutional partners. Recently delivered a 3-day B2B accelerator sponsored by the Italian Trade Agency. ", 
+                   text_5: "Curated workshops and seminars with institutional partners. Recently delivered a 3-day B2B accelerator sponsored by the Italian Trade Agency.", 
+                   text_6: "Follow us on <a class='cursor-pointer underline decoration-dotted' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a> for updates.",
                  },
-              ja: { text_1: "UrbanTech Venturesは、建築や都市環境に関わる技術の事業化を支援する基盤です。企業、新興企業、研究機関などと連携し、情報技術と実空間の仕組みを組み合わせ、日本の都市が抱える課題の解決を大きな規模で進めています。",
-              text_2: "スマートシティの実現に向け、現場から積み上げる手法を採用しています。建物の自動管理、物流と小売、移動手段、安全対策、社会基盤や情報網といった分野における実際の利用者の課題から出発します。事業は産業関係者との直接的な協働を通じて選定・検証され、社会への導入が進められます。また、成果を数値で評価し、それに基づいて収益を関係者に配分する仕組みを構築します。",
-               text_3: "企業向けにベンチャークライアント制度を構築し、必要に応じた実証試験のために新興企業を選定します。",
-                text_4: "投資を受けた新興企業や成長企業が日本で顧客を獲得できるよう、直接紹介や新規開拓を含めて支援します。",
-                text_5: "", 
-              },
-          };
+              ja: { text_1: "UrbanTech Venturesは、建築・都市環境分野の技術に特化した新規事業の実用化基盤です。企業、新興企業、各種機関と連携し、情報技術と実空間の仕組みを組み合わせ、日本の都市課題の大規模な解決に取り組んでいます。",
+                    text_2: "私たちの手法は、実際の利用者のニーズを起点とした下からの積み上げ型であり、次世代都市に特化して設計されています。事業は、産業関係者との直接的な協働を通じて特定・検証・実装され、収益関係は、測定可能な成果に基づいて分配される形で構築されます。",
+                    text_3: "企業による新興企業の技術・解決策の調達および実証検証。",
+                    text_4: "新興企業の事業化と導入を推進する助言業務。現在、人工知能を活用した建設安全対策および第5世代移動通信基盤に取り組んでいます。",
+                    text_5: "公的機関との連携による選抜型の研修会および講習会。直近では、イタリア貿易振興機関の支援により、3日間の企業間向け育成事業を実施しました。", 
+                    text_6: " 最新情報は<a class='cursor-pointer underline decoration-dotted' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a>をご覧ください。"
+                  },
+               };
       
-          document.getElementById("text_1").textContent = translations[lang].text_1;
-          document.getElementById("text_2").textContent = translations[lang].text_2;
-          document.getElementById("text_3").textContent = translations[lang].text_3;
-          document.getElementById("text_4").textContent = translations[lang].text_4;
-          document.getElementById("text_5").textContent = translations[lang].text_5;
-          document.getElementById("locationText").textContent = translations[lang].locationText;
+          document.getElementById("text_1").innerHTML = translations[lang].text_1;
+          document.getElementById("text_2").innerHTML = translations[lang].text_2;
+          document.getElementById("text_3").innerHTML = translations[lang].text_3;
+          document.getElementById("text_4").innerHTML = translations[lang].text_4;
+          document.getElementById("text_5").innerHTML = translations[lang].text_5;
+          document.getElementById("text_6").innerHTML = translations[lang].text_6;
+          document.getElementById("locationText").innerHTML = translations[lang].locationText;
           localStorage.setItem("selectedLang", lang);
       }
       
       const browserLang = navigator.language.startsWith("en") ? "en" : navigator.language.startsWith("ja") ? "ja" : "en";
       changeLanguage(localStorage.getItem("selectedLang") || browserLang);
       
-      document.querySelectorAll(".flag-icon").forEach(flag => flag.addEventListener("click", () => changeLanguage(flag.dataset.lang)));
+      document.querySelectorAll(".lang_icon").forEach(lang => lang.addEventListener("click", () => changeLanguage(lang.dataset.lang)));
       
       
-      document.getElementById("text_1").textContent = translations[lang].text_1;
+     
       
     </script>
   </body>
