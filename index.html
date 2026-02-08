@@ -57,6 +57,7 @@
       }  
       .pill {
       background-color: #e7e5e4;  
+      place-self: start;
       padding-inline: 1em;
       padding-block: 0.3em;
       border-radius: calc(infinity * 1px);
@@ -67,29 +68,33 @@
   <body class="grid content-between items-center min-h-screen bg-stone-100">
     <header class="w-full flex justify-end items-center px-12 py-8 mb-12">
       <div class="flex flex-row gap-4 text-sm">
-        <p class="grotesk lang_icon cursor-pointer" data-lang="en" alt="English">EN</p>
-        <p class="grotesk lang_icon cursor-pointer" data-lang="ja" alt="日本語">JA</p>
+        <p class="grotesk lang_icon cursor-pointer" data-lang="en">EN</p>
+        <p class="grotesk lang_icon cursor-pointer" data-lang="ja">JA</p>
       </div>
     </header>
-    <div class="flex flex-col place-self-center items-center p-8 sm:w-[800px] w-full ">
-      <p class="text-5xl font-semibold text-teal-600 tracking-widest sm:text-center text-left mb-12 grotesk uppercase">urbantech ventures</p>
-      <div class="flex flex-col sm:grid grid-cols-3 gap-y-3 place-self-start sm:place-self-center">
-        <p class="grotesk pill place-self-start sm:place-self-end">building decarbonization</p>
-        <p class="grotesk pill place-self-start sm:place-self-center">construction automation</p>
-        <p class="grotesk pill place-self-start sm:place-self-start">assisted living</p>
-        <p class="grotesk pill place-self-start sm:place-self-end">last-mile delivery</p>
-        <p class="grotesk pill place-self-start sm:place-self-center">infrastructure maintenance</p>
-        <p class="grotesk pill place-self-start sm:place-self-start">distributed grids</p>
-        <p class="grotesk pill place-self-start sm:place-self-end">materials recycling</p>
-        <p class="grotesk pill place-self-start sm:place-self-center">city operating systems</p>
-        <p class="grotesk pill place-self-start sm:place-self-start">autonomous regional mobility</p>
+    <div class="flex flex-col place-self-center items-center gap-3 p-8 sm:w-[800px] w-full ">
+      <p class="text-5xl font-semibold text-teal-600 tracking-widest sm:text-center text-left mb-9 grotesk uppercase">urbantech ventures</p>
+      <div class="flex sm:flex-row flex-col gap-3 place-self-start">
+        <p class="grotesk pill">building decarbonization</p>
+        <p class="grotesk pill">construction automation</p>
+        <p class="grotesk pill">assisted living</p>
       </div>
-      <div class="text-lg space-y-4 mt-12">
+      <div class="flex sm:flex-row flex-col gap-3 w-full place-self-start">
+        <p class="grotesk pill">last-mile delivery</p>
+        <p class="grotesk pill">infrastructure maintenance</p>
+        <p class="grotesk pill">distributed grids</p>
+      </div>
+      <div class="flex sm:flex-row flex-col gap-3 w-full place-self-start">
+        <p class="grotesk pill">materials recycling</p>
+        <p class="grotesk pill">city operating systems</p>
+        <p class="grotesk pill">autonomous regional mobility</p>
+      </div>
+      <div class="text-lg space-y-4 mt-9">
         <p id="text_1" class=""></p>
         <p id="text_2"></p>
         <ul class="list-[&apos;◼_&apos;] list-inside space-y-2 ">
           <li><span class="font-bold">Venture clienting: </span><span id="text_3"></span></li>
-          <li><span class="font-bold">Go-To-Market: </span></span><span id="text_4"></span></li>
+          <li><span class="font-bold">Go-To-Market: </span><span id="text_4"></span></li>
           <li><span class="font-bold">Industry Access Labs: </span><span id="text_5"></span></li>
         </ul>
         <p id="text_6" class="pt-8"></p>
@@ -141,7 +146,7 @@
       document.querySelectorAll(".lang_icon").forEach(lang => lang.addEventListener("click", () => changeLanguage(lang.dataset.lang)));
       
       
-     
+      
       
     </script>
   </body>
