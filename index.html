@@ -91,19 +91,13 @@
           <li><span class="font-bold">Go-To-Market: </span><span id="text_4"></span></li>
           <li><span class="font-bold">Industry Access Labs: </span><span id="text_5"></span></li>
         </ul>
+        <p id="text_6"></p>
+        <p class="text-lg"><span class="font-bold">Team</span><br> 
+          <a class="cursor-pointer underline decoration-dotted" target="_blank" id="text_7" href="https://www.linkedin.com/in/alberto-saruggia/"></a><br> 
+          <a class="cursor-pointer underline decoration-dotted" target="_blank" id="text_8" href="https://www.linkedin.com/in/spdlm/"></a>
+        </p>
       </div>
-      <div>
-        <div class="text-lg">
-          <p class="font-bold">Team</p>
-          <a class="cursor-pointer underline decoration-dotted" target="_blank" href="https://www.linkedin.com/in/alberto-saruggia/">Alberto MG Saruggia</a>, <a class="cursor-pointer underline decoration-dotted" target="_blank" href="https://www.linkedin.com/in/spdlm/">Shingo Potier de la Morandière</a> 
-        </div>
-      </div>
-      <p class="text-lg" id="text_6"></p>
-      <div>
-        <div class="text-lg">Backed by
-          <a class="" target="_blank" href="https://www.antler.co"><img class="h-12 w-auto grayscale object-cover cursor-pointer" src="https://raw.githubusercontent.com/AMG22075/urbantech.ventures/refs/heads/main/img/antler.png" alt=""/></a>
-        </div>
-      </div>
+      <p class="text-lg" id="text_9"></p>
     </div>
     <footer class="flex flex-col items-center select-none">
       <p class="grotesk font-normal text-stone-400">Urbantech Ventures &copy; <span class="grotesk font-normal text-stone-400" id="currentYear"></span></p>
@@ -119,14 +113,20 @@
                     text_3: "Corporate procurement and pilot validation of startup solutions.",
                     text_4: "Advisory services enabling startup commercialization and adoption. Currently working on AI-powered construction safety and 5G telecom infrastructure.",
                     text_5: "Curated workshops and seminars with institutional partners. Recently delivered a 3-day B2B accelerator sponsored by the Italian Trade Agency in Japan.", 
-                    text_6: "Follow us on <a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a> or <a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>send us</a> your pitch.",
+                    text_6: "We are backed by <a class='font-bold cursor-pointer underline decoration-dotted' target='_blank' href='https://www.antler.co'>Antler Japan</a>, a global early-stage venture capital firm investing in technology companies across major ecosystems.",
+                    text_7: "Alberto MG Saruggia",
+                    text_8: "Shingo Potier",
+                    text_9: "Follow us on <a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a> or <a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>send us</a> your pitch.",
                  },
               ja: { text_1: "Urbantech Venturesは、建築・都市環境分野の技術に特化した新規事業の実用化基盤です。企業、新興企業、各種機関と連携し、情報技術と実空間の仕組みを組み合わせ、日本の都市課題の大規模な解決に取り組んでいます。",
                     text_2: "私たちの手法は、実際の利用者のニーズを起点とした下からの積み上げ型であり、次世代都市に特化して設計されています。事業は、産業関係者との直接的な協働を通じて特定・検証・実装され、収益関係は、測定可能な成果に基づいて分配される形で構築されます。",
                     text_3: "企業による新興企業の技術・解決策の調達および実証検証。",
                     text_4: "新興企業の事業化と導入を推進する助言業務。現在、人工知能を活用した建設安全対策および第5世代移動通信基盤に取り組んでいます。",
                     text_5: "公的機関との連携による選抜型の研修会および講習会。直近では、イタリア貿易振興機関の支援により、3日間の企業間向け育成事業を実施しました。", 
-                    text_6: "<a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a>でフォローするか、プレゼンテーション資料を<a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>お送りください</a>。"
+                    text_6: "当社は、世界各地の主要な事業圏で技術系企業に投資する、創業初期段階の投資会社である<a class='font-bold cursor-pointer underline decoration-dotted' target='_blank' href='https://www.antler.co'>Antler Japan</a>の出資を受けています。 ",
+                    text_7: "アルベルト サルージャ",
+                    text_8: "ポチエ真悟",
+                    text_9: "<a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a>でフォローするか、事業提案を<a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>お送りください</a>。"
                   },
                };
       
@@ -136,6 +136,9 @@
           document.getElementById("text_4").innerHTML = translations[lang].text_4;
           document.getElementById("text_5").innerHTML = translations[lang].text_5;
           document.getElementById("text_6").innerHTML = translations[lang].text_6;
+          document.getElementById("text_7").innerHTML = translations[lang].text_7;
+          document.getElementById("text_8").innerHTML = translations[lang].text_8;
+          document.getElementById("text_9").innerHTML = translations[lang].text_9;
           document.getElementById("locationText").innerHTML = translations[lang].locationText;
           localStorage.setItem("selectedLang", lang);
       }
