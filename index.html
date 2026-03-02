@@ -97,7 +97,11 @@
           <a class="cursor-pointer underline decoration-dotted" target="_blank" id="text_8" href="https://www.linkedin.com/in/spdlm/"></a>
         </p>
       </div>
+      <div class="grid gap-4">
       <p class="text-lg" id="text_9"></p>
+      <img class="w-2/3 h-auto" src="https://raw.githubusercontent.com/AMG22075/urbantech.ventures/refs/heads/main/img/stt2026_logo_type_d.png">
+      </div>
+      <p class="text-lg" id="text_10"></p>
     </div>
     <footer class="flex flex-col items-center select-none">
       <p class="grotesk font-normal text-stone-400">Urbantech Ventures &copy; <span class="grotesk font-normal text-stone-400" id="currentYear"></span></p>
@@ -116,7 +120,8 @@
                     text_6: "We are backed by <a class='font-bold cursor-pointer underline decoration-dotted' target='_blank' href='https://www.antler.co'>Antler Japan</a>, a global early-stage venture capital firm investing in technology companies across major ecosystems.",
                     text_7: "Alberto MG Saruggia",
                     text_8: "Shingo Potier",
-                    text_9: "Follow us on <a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a> or <a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>send us</a> your pitch.",
+                    text_9: "Official Ambassador",
+                    text_10: "Follow us on <a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a> or <a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>send us</a> your pitch.",
                  },
               ja: { text_1: "Urbantech Venturesは、建築・都市環境分野の技術に特化した新規事業の実用化基盤です。日本の産業力を活用し、都市が直面する4つの中核課題 – 高齢化と労働力不足、デジタル化の遅れ、気候および規制圧力、資産の陳腐化リスク – に対応する。当社のモデルは、企業、スタートアップ、機関を巻き込み、ベンチャークライアント方式、市場展開支援、産業連携ラボを通じて、デジタルと物理の解決策を統合する。",
                     text_2: "私たちの手法は、実際の利用者のニーズを起点とした下からの積み上げ型であり、次世代都市に特化して設計されています。事業は、産業関係者との直接的な協働を通じて特定・検証・実装され、収益関係は、測定可能な成果に基づいて分配される形で構築されます。",
@@ -126,7 +131,8 @@
                     text_6: "当社は、世界各地の主要な事業圏で技術系企業に投資する、創業初期段階の投資会社である<a class='font-bold cursor-pointer underline decoration-dotted' target='_blank' href='https://www.antler.co'>Antler Japan</a>の出資を受けています。 ",
                     text_7: "アルベルト サルージャ",
                     text_8: "ポチエ真悟",
-                    text_9: "<a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a>でフォローするか、事業提案を<a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>お送りください</a>。"
+                    text_9: "Official Ambassador",
+                    text_10: "<a class='cursor-pointer underline decoration-dotted' target='_blank' href='https://www.linkedin.com/company/urban-tech-ventures/'>LinkedIn</a>でフォローするか、事業提案を<a class='cursor-pointer underline decoration-dotted' href='mailto:info@urbantech.ventures'>お送りください</a>。"
                   },
                };
       
@@ -139,6 +145,7 @@
           document.getElementById("text_7").innerHTML = translations[lang].text_7;
           document.getElementById("text_8").innerHTML = translations[lang].text_8;
           document.getElementById("text_9").innerHTML = translations[lang].text_9;
+          document.getElementById("text_10").innerHTML = translations[lang].text_10;
           document.getElementById("locationText").innerHTML = translations[lang].locationText;
           localStorage.setItem("selectedLang", lang);
       }
